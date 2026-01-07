@@ -14,20 +14,30 @@
       h1, h2, h3, .font-serif {
         font-family: 'Playfair+Display', serif;
       }
-      .sunset-gradient {
-        background: linear-gradient(to bottom, #1e1b4b, #312e81, #f59e0b);
+      .sun-gradient {
+        background: linear-gradient(135deg, #f59e0b 0%, #ea580c 50%, #b91c1c 100%);
       }
-      .glass {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+      .tropical-gradient {
+        background: linear-gradient(to right, #f59e0b, #fbbf24, #10b981);
+      }
+      .glass-sun {
+        background: rgba(234, 88, 12, 0.9);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
       }
       html {
         scroll-behavior: smooth;
       }
     </style>
     <script>
-      // Define um objeto process básico para evitar erros de 'process is not defined' no navegador
       window.process = window.process || { env: {} };
     </script>
   <script type="importmap">
@@ -41,9 +51,8 @@
 }
 </script>
 </head>
-  <body class="bg-slate-900 text-slate-100">
+  <body class="bg-slate-900 text-slate-100 overflow-x-hidden">
     <div id="root"></div>
-    <!-- Carrega o script principal da aplicação como um módulo ES -->
     <script type="module" src="index.tsx"></script>
   </body>
 </html>
