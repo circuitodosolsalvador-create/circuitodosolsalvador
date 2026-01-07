@@ -1,6 +1,6 @@
 {
-  "name": "Copy of Circuito do Sol - Passeios Turísticos",
-  "description": "A premium nautical tour agency website featuring sunset cruises, island adventures, and an AI-powered concierge for personalized experiences.",
+  "name": "Circuito do Sol - Turismo na Bahia",
+  "description": "Especialistas em passeios de escuna, lancha e catamarã pelos destinos mais encantadores da Bahia, como Morro de São Paulo e Praia do Forte.",
   "requestFramePermissions": [
     "camera",
     "microphone"

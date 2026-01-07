@@ -26,6 +26,10 @@
         scroll-behavior: smooth;
       }
     </style>
+    <script>
+      // Define um objeto process básico para evitar erros de 'process is not defined' no navegador
+      window.process = window.process || { env: {} };
+    </script>
   <script type="importmap">
 {
   "imports": {
@@ -39,5 +43,7 @@
 </head>
   <body class="bg-slate-900 text-slate-100">
     <div id="root"></div>
+    <!-- Carrega o script principal da aplicação como um módulo ES -->
+    <script type="module" src="index.tsx"></script>
   </body>
 </html>

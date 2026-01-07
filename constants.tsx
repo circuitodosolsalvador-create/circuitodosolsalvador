@@ -2,43 +2,45 @@
 import React from 'react';
 import { Tour } from './types';
 
+// INSTRUÇÃO PARA O USUÁRIO: 
+// Substitua o link abaixo pelo link do seu repositório GitHub (caminho RAW)
+// Exemplo: https://raw.githubusercontent.com/seu-usuario/seu-repositorio/main/
+export const ASSETS_BASE_URL = "https://raw.githubusercontent.com/seu-usuario/seu-repositorio/main/assets/";
+
 export const TOURS: Tour[] = [
   {
     id: '1',
-    title: 'Pôr do Sol Mágico',
-    description: 'Navegue em direção ao horizonte enquanto o sol se põe, pintando o céu com tons de fogo e ouro. Inclui drinks e música ao vivo.',
-    price: 'R$ 180',
-    duration: '3 Horas',
-    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800',
-    category: 'Sunset'
-  },
-  {
-    id: '2',
-    title: 'Expedição Ilha Secreta',
-    description: 'Descubra praias desertas e águas cristalinas em uma jornada de aventura pelas ilhas mais preservadas da região.',
-    price: 'R$ 250',
-    duration: '6 Horas',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=800',
+    title: 'Morro de São Paulo VIP',
+    description: 'Travessia rápida e confortável de lancha privativa ou semiprivativa para um dos destinos mais cobiçados da Bahia.',
+    price: 'R$ 220',
+    duration: 'Dia Inteiro',
+    image: `${ASSETS_BASE_URL}tour-morro.jpg`,
     category: 'Adventure'
   },
   {
+    id: '2',
+    title: 'Escuna pelas Ilhas',
+    description: 'Um passeio clássico e animado pela Baía de Todos os Santos, visitando Ilha dos Frades e Itaparica com total conforto.',
+    price: 'R$ 120',
+    duration: '7 Horas',
+    image: `${ASSETS_BASE_URL}tour-escuna.jpg`,
+    category: 'Sunset'
+  },
+  {
     id: '3',
-    title: 'Charter Exclusivo',
-    description: 'A embarcação inteira para você e seus convidados. Roteiro personalizado e serviço de bordo premium.',
-    price: 'Sob Consulta',
-    duration: 'Personalizado',
-    image: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&q=80&w=800',
+    title: 'Catamarã Praia do Forte',
+    description: 'Navegação estável e luxuosa para observação de baleias (na temporada) ou visita às piscinas naturais da Praia do Forte.',
+    price: 'R$ 180',
+    duration: '4 Horas',
+    image: `${ASSETS_BASE_URL}tour-catamara.jpg`,
     category: 'Private'
   }
 ];
 
-export const SYSTEM_PROMPT = `Você é o Concierge Virtual da 'Circuito do Sol - Passeios Turísticos'. 
-Seu objetivo é ajudar os clientes a escolher o melhor passeio de barco.
-Seja elegante, prestativo e evoque a sensação de relaxamento e aventura no mar.
-As opções de passeios são:
-1. Pôr do Sol Mágico (R$ 180, 3h, relaxante, romântico).
-2. Expedição Ilha Secreta (R$ 250, 6h, aventura, snorkel, natureza).
-3. Charter Exclusivo (Preço sob consulta, personalizado para grupos).
-
-Sempre mencione que somos especialistas em criar memórias inesquecíveis sob o sol.
-Se perguntarem sobre preços, seja transparente. Se perguntarem sobre reservas, diga que podem clicar no botão de reservas no site.`;
+export const SYSTEM_PROMPT = `Você é o Concierge Virtual da 'Circuito do Sol - Passeios Turísticos na Bahia'. 
+Seu objetivo é ajudar os clientes a escolher o melhor passeio pelo litoral baiano.
+A empresa é especializada em: Escuna, Lancha e Catamarã.
+Os destinos principais são: Morro de São Paulo, Praia do Forte e as Ilhas da região.
+Seja elegante, prestativo e destaque os valores da empresa: Conforto, Segurança e Organização.
+Temos embarcações bem equipadas e equipe qualificada para momentos inesquecíveis.
+Se perguntarem sobre preços ou reservas, oriente-os a entrar em contato pelo WhatsApp (71) 99657-8592 ou e-mail circuitodosolsalvador@gmail.com.`;

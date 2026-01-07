@@ -3,6 +3,8 @@ import React from 'react';
 import { TOURS } from '../constants';
 
 const Tours: React.FC = () => {
+  const whatsappUrl = "https://wa.me/5571996578592";
+
   return (
     <section id="tours" className="py-24 bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,9 +56,14 @@ const Tours: React.FC = () => {
                     Confirmado
                   </span>
                 </div>
-                <button className="w-full py-3 border border-amber-500/50 text-amber-500 rounded-xl font-bold hover:bg-amber-500 hover:text-slate-900 transition-all">
-                  Saber Mais
-                </button>
+                <a 
+                  href={`${whatsappUrl}?text=Olá! Gostaria de mais informações sobre o passeio: ${tour.title}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center py-3 border border-amber-500/50 text-amber-500 rounded-xl font-bold hover:bg-amber-500 hover:text-slate-900 transition-all"
+                >
+                  Consultar Disponibilidade
+                </a>
               </div>
             </div>
           ))}
