@@ -2,10 +2,11 @@
 import React from 'react';
 import { Tour } from './types';
 
-// INSTRUÇÃO PARA O USUÁRIO: 
-// Substitua o link abaixo pelo link do seu repositório GitHub (caminho RAW)
-// Exemplo: https://raw.githubusercontent.com/seu-usuario/seu-repositorio/main/
-export const ASSETS_BASE_URL = "https://raw.githubusercontent.com/seu-usuario/seu-repositorio/main/assets/";
+/**
+ * URL BASE PARA ASSETS DO GITHUB
+ * Baseado no seu repositório: circuitodosolsalvador-create/circuitodosolsalvador
+ */
+export const ASSETS_BASE_URL = "https://raw.githubusercontent.com/circuitodosolsalvador-create/circuitodosolsalvador/main/assets/";
 
 export const TOURS: Tour[] = [
   {
