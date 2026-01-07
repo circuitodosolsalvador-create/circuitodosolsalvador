@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Circuito do Sol - Passeios Turísticos",
+  "description": "A premium nautical tour agency website featuring sunset cruises, island adventures, and an AI-powered concierge for personalized experiences.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
