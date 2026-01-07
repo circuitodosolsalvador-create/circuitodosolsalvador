@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Tours from './components/Tours';
+import Gallery from './components/Gallery';
 import About from './components/About';
 import { ASSETS_BASE_URL } from './constants';
 
@@ -64,6 +65,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 font-bold text-slate-600">
               <li><a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="hover:text-orange-500 transition-colors">Início</a></li>
               <li><a href="#tours" onClick={(e) => scrollToSection(e, 'tours')} className="hover:text-orange-500 transition-colors">Passeios</a></li>
+              <li><a href="#gallery" onClick={(e) => scrollToSection(e, 'gallery')} className="hover:text-orange-500 transition-colors">Galeria</a></li>
               <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="hover:text-orange-500 transition-colors">Sobre Nós</a></li>
             </ul>
           </div>
@@ -104,6 +106,7 @@ const App: React.FC = () => {
       <Navbar />
       <Hero />
       <Tours />
+      <Gallery />
       <About />
       <Footer />
       <WhatsAppFloating />

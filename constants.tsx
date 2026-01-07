@@ -1,11 +1,6 @@
 
-import React from 'react';
 import { Tour } from './types';
 
-/**
- * URL BASE PARA ASSETS DO GITHUB
- * Baseado no seu repositório: circuitodosolsalvador-create/circuitodosolsalvador
- */
 export const ASSETS_BASE_URL = "https://raw.githubusercontent.com/circuitodosolsalvador-create/circuitodosolsalvador/main/assets/";
 
 export const TOURS: Tour[] = [
@@ -13,7 +8,7 @@ export const TOURS: Tour[] = [
     id: '1',
     title: 'Morro de São Paulo VIP',
     description: 'Travessia rápida e confortável de lancha privativa ou semiprivativa para um dos destinos mais cobiçados da Bahia.',
-    price: 'R$ 220',
+    price: 'A consultar',
     duration: 'Dia Inteiro',
     image: `${ASSETS_BASE_URL}tour-morro.jpg`,
     category: 'Adventure'
@@ -22,7 +17,7 @@ export const TOURS: Tour[] = [
     id: '2',
     title: 'Escuna pelas Ilhas',
     description: 'Um passeio clássico e animado pela Baía de Todos os Santos, visitando Ilha dos Frades e Itaparica com total conforto.',
-    price: 'R$ 120',
+    price: 'A consultar',
     duration: '7 Horas',
     image: `${ASSETS_BASE_URL}tour-escuna.jpg`,
     category: 'Sunset'
@@ -31,17 +26,18 @@ export const TOURS: Tour[] = [
     id: '3',
     title: 'Catamarã Praia do Forte',
     description: 'Navegação estável e luxuosa para observação de baleias (na temporada) ou visita às piscinas naturais da Praia do Forte.',
-    price: 'R$ 180',
+    price: 'A consultar',
     duration: '4 Horas',
     image: `${ASSETS_BASE_URL}tour-catamara.jpg`,
     category: 'Private'
   }
 ];
 
-export const SYSTEM_PROMPT = `Você é o Concierge Virtual da 'Circuito do Sol - Passeios Turísticos na Bahia'. 
-Seu objetivo é ajudar os clientes a escolher o melhor passeio pelo litoral baiano.
-A empresa é especializada em: Escuna, Lancha e Catamarã.
-Os destinos principais são: Morro de São Paulo, Praia do Forte e as Ilhas da região.
-Seja elegante, prestativo e destaque os valores da empresa: Conforto, Segurança e Organização.
-Temos embarcações bem equipadas e equipe qualificada para momentos inesquecíveis.
-Se perguntarem sobre preços ou reservas, oriente-os a entrar em contato pelo WhatsApp (71) 99657-8592 ou e-mail circuitodosolsalvador@gmail.com.`;
+export const DESTINATIONS_GALLERY = [
+  { id: 'neves', title: 'Praia das Neves', prefix: 'neves' },
+  { id: 'prainha', title: 'Prainha (Aratu)', prefix: 'prainha' },
+  { id: 'loreto', title: 'Loreto', prefix: 'loreto' },
+  { id: 'frades', title: 'Ilha dos Frades', prefix: 'frades' }
+];
+
+export const SYSTEM_PROMPT = `Você é o Concierge Virtual da 'Circuito do Sol'. Ajude clientes com passeios de Escuna, Lancha e Catamarã na Bahia. WhatsApp: (71) 99657-8592.`;
