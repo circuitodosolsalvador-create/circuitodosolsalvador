@@ -11,7 +11,6 @@ export const TOURS: Tour[] = [
     price: 'A consultar',
     duration: 'Dia Inteiro',
     image: `${ASSETS_BASE_URL}tour-morro.jpg`,
-    category: 'Adventure'
   },
   {
     id: '2',
@@ -20,16 +19,6 @@ export const TOURS: Tour[] = [
     price: 'A consultar',
     duration: '7 Horas',
     image: `${ASSETS_BASE_URL}tour-escuna.jpg`,
-    category: 'Sunset'
-  },
-  {
-    id: '3',
-    title: 'Catamarã Praia do Forte',
-    description: 'Navegação estável e luxuosa para observação de baleias (na temporada) ou visita às piscinas naturais da Praia do Forte.',
-    price: 'A consultar',
-    duration: '4 Horas',
-    image: `${ASSETS_BASE_URL}tour-catamara.jpg`,
-    category: 'Private'
   }
 ];
 
